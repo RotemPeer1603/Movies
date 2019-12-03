@@ -68,7 +68,7 @@ public class MovieAdapter extends BaseAdapter
             TextView actorsView = view.findViewById(R.id.movie_actors);
 
             // set all data in view
-            if (imageUrl.equals("none"))
+            if (imageUrl.isEmpty())
             {
                 Picasso.with(context).load(R.drawable.place_holder).into(imageView);
             }

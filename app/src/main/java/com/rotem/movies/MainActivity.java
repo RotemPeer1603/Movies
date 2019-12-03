@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity
 {
     public ListView listViewMovie;
     public MovieAdapter adapter;
-    public static final String restUrl = "http://10.0.2.2:8080/movie";
+    public static final String restUrl = "https://movies-rotem.herokuapp.com/movie";
 
 
     @Override

@@ -64,7 +64,10 @@ public class UpdateMovieActivity extends AppCompatActivity
             txtScore.setText(movie.getScore());
             txtActors.setText(movie.getActors());
             txtDesc.setText(movie.getDescription());
-            Picasso.with(this).load(movie.getImageUrl()).into(image);
+            if (!movie.getImageUrl().isEmpty())
+            {
+                Picasso.with(this).load(movie.getImageUrl()).into(image);
+            }
         }
         btnUpdate = findViewById(R.id.btnUpdate);
         btnChooseImage = findViewById(R.id.btnChooseImage);
